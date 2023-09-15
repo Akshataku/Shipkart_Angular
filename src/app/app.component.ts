@@ -18,7 +18,7 @@ export class AppComponent {
   //   // alert("Button got clicked");
   //   this.router.navigate([`${pageName}`]);
   // }
-
+  
   constructor(private productsData:ProductsDataService)
   {
     productsData.products().subscribe((data) =>{
