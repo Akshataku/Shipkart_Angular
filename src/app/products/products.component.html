@@ -1,4 +1,4 @@
-<h2>Product Lists</h2>
+<h3>Product Lists</h3>
 <!-- 
 <ul>
     <li *ngFor = "let product of products">
@@ -9,11 +9,20 @@
 </ul>  -->
 
 <div class="grid-container">
-    <div class="grid-item" *ngFor = "let product of products">
-        Product - {{product.item}} <br> 
+    <div class="grid-item" *ngFor = "let product of products" (click)="store_id(product)">
+        
+        <img src="{{product.imageUrl}}"  alt="">
+        <br>
+        Product - {{product.item}}
+        <br> 
         Brand - {{product.brand}} <br>
-        Price - {{product.price}} <br> <br>
+        Price - {{product.price}} <br> 
+        id - {{product._id}}<br>
     </div>
 </div>
+
+
+
+<!-- <img src="../../assets/images/Television.jpg" height="250" width="350" alt=""> -->
 
 <!-- <button type="button" class="btn btn-warning">Warning</button> -->

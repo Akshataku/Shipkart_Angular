@@ -1,54 +1,53 @@
 
 <!-- Header-->
 
-<section class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="">{{title}}</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="">{{title}}</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarTogglerDemo01"
+    aria-controls="navbarTogglerDemo01"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#orders">Orders</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#kart">Kart</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#login">Login</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      
-</section>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link btn btn-dark" routerLink="/Product" routerLinkActive="" ariaCurrentWhenActive="page">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-dark" href="#orders">Orders</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-dark" href="#kart">Kart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-dark" routerLink="/Signup" >Signup</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    
+
 
 <section class="body">
-    <p>I am body.</p>
-    <a routerLink="/Product" routerLinkActive="active" ariaCurrentWhenActive="page">Products</a>
-
-    <app-products>
-        
-    </app-products>
+  
+  <router-outlet></router-outlet>  
+  
 </section>
 
-<!-- <button class="btn" type="button" (click)="goToPage('Products')">Products</button> -->
- 
-<!-- 
-<app-itemdetails>
-</app-itemdetails> -->
+<section class="lower">
+  
+</section>
 
 <section class="footer">
+  <h4>@Shipkart,2023</h4>
+  <h6>All rights reserved.</h6>
 </section>
 
-<router-outlet></router-outlet>
