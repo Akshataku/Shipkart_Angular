@@ -10,14 +10,16 @@
 
 <div class="grid-container">
     <div class="grid-item" *ngFor = "let product of products" (click)="store_id(product)">
-        
+        <br>
         <img src="{{product.imageUrl}}"  alt="">
+        <br>
         <br>
         Product - {{product.item}}
         <br> 
         Brand - {{product.brand}} <br>
-        Price - {{product.price}} <br> 
-        id - {{product._id}}<br>
+        Price - Rs. {{product.price}} /-<br> 
+        <br>
+        
     </div>
 </div>
 
