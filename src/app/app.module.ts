@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { ProductsComponent } from './products/products.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
 
 //Google authentication
 import { SocialLoginModule,SocialAuthServiceConfig } from '@abacritt/angularx-social-login';
@@ -22,7 +23,8 @@ import { GoogleSigninButtonModule } from '@abacritt/angularx-social-login';
     AppComponent,
     ProductsComponent,
     ProductdetailsComponent,
-    SignupComponent
+    SignupComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
