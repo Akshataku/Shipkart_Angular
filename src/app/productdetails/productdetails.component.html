@@ -1,0 +1,92 @@
+<div class="row">
+
+  <div class="col-lg-6">
+    <img src="{{product.imageUrl}}" alt="image">
+  </div>
+  
+  <div class="col-lg-6" *ngIf="product">
+      
+      <h1>{{ product.item }}</h1>
+      Brand - {{product.brand}} <br>
+      <p>Price: Rs - {{ product.price }}/-</p>
+      <h2>Specifications</h2>
+      Color - {{product.specifications.color}}
+  
+      <div *ngIf="product.specifications.display">
+        Display - {{product.specifications.display}}
+      </div>
+      <div *ngIf="product.specifications.size">
+        Size - {{product.specifications.size}}
+      </div>
+      <div *ngIf="product.specifications.resolution">
+        Resolution - {{product.specifications.resolution}}
+      </div>
+      <div *ngIf="product.specifications.refresh_rate">
+        Refresh rate - {{product.specifications.refresh_rate}}
+      </div>
+      <div *ngIf="product.specifications.capacity">
+        Capacity - {{product.specifications.capacity}}
+      </div>
+      <div *ngIf="product.specifications.camera">
+        Camera - {{product.specifications.camera}}
+      </div>
+      <div *ngIf="product.specifications.OS">
+        Operating system - {{product.specifications.OS}}
+      </div>
+      <div *ngIf="product.specifications.connectivity">
+        Connectivity - {{product.specifications.connectivity}}
+      </div>
+      <div *ngIf="product.specifications.battery">
+        Battery - {{product.specifications.battery}}
+      </div>
+      <div *ngIf="product.specifications.playtime">
+        Playtime - {{product.specifications.playtime}}
+      </div>
+      <div *ngIf="product.specifications.LED">
+        LED - {{product.specifications.LED}}
+      </div>
+      <div *ngIf="product.specifications.type">
+        Type - {{product.specifications.type}}
+      </div>
+      <div *ngIf="product.specifications.screen_size">
+        Screen Size - {{product.specifications.screen_size}}
+      </div>
+      <div *ngIf="product.specifications.port">
+        Port - {{product.specifications.port}}
+      </div>
+      <div *ngIf="product.specifications.processor">
+        Processor - {{product.specifications.processor}}
+      </div>
+      <div *ngIf="product.specifications.ROM">
+        ROM - {{product.specifications.ROM}}
+      </div>
+      <div *ngIf="product.specifications.RAM">
+        RAM - {{product.specifications.RAM}}
+      </div>
+      <div *ngIf="product.specifications.weight">
+        Weight - {{product.specifications.weight}}
+      </div>
+      <div *ngIf="product.specifications.graphics">
+        Graphics - {{product.specifications.graphics}}
+      </div>
+      <div *ngIf="product.specifications.speeds">
+        Speeds - {{product.specifications.speeds}}
+      </div>
+      <div *ngIf="product.specifications.power">
+        Power - {{product.specifications.power}}
+      </div>
+
+      <br><br>
+
+      <div class="temp">
+        <button type="button" (click)="add_to_kart(product)">
+            Add to kart
+        </button>
+        
+      </div>
+    
+
+  </div>    
+
+ 
+</div>

@@ -1,0 +1,17 @@
+<p>kart works!</p>
+
+
+<div class="kart" *ngFor = "let product of kartproducts">
+    <div class="row" >
+        <div class="col">
+            <img src="{{product.imageUrl}}" alt="">
+        </div>
+        
+        <div class="col">
+            <div class="row">Product - {{product.item}}</div>
+            <div class="row">Brand - {{product.brand}}</div>
+            <div class="row">Price - {{product.price}}</div>
+        </div>
+    </div>
+    <br>
+</div>
