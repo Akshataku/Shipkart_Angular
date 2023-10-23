@@ -7,7 +7,6 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { KartComponent } from './kart/kart.component';
 
-
 const routes: Routes = [
   {path:'Product', component: ProductsComponent},
   {path:'Product/:id', component: ProductdetailsComponent},
