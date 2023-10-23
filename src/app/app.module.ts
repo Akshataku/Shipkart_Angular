@@ -11,11 +11,13 @@ import { ProductsComponent } from './products/products.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
+import { KartComponent } from './kart/kart.component';
 
 //Google authentication
 import { SocialLoginModule,SocialAuthServiceConfig } from '@abacritt/angularx-social-login';
 import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
 import { GoogleSigninButtonModule } from '@abacritt/angularx-social-login';
+
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { GoogleSigninButtonModule } from '@abacritt/angularx-social-login';
     ProductsComponent,
     ProductdetailsComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    KartComponent
   ],
   imports: [
     BrowserModule,

@@ -21,7 +21,7 @@ export class ProductsComponent {
   }
 
   store_id(product:any){
-    
     this.router.navigate(['/Product',product._id]);
   }
+
 }

@@ -9,7 +9,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Shipkart';
+  title = 'hipkart';
   products:any;
 
   // constructor(private router:Router){}

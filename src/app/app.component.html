@@ -2,7 +2,8 @@
 <!-- Header-->
 
 <nav class="navbar navbar-expand-lg navbar-dark">
-  <a class="navbar-brand" href="">{{title}}</a>
+  
+  <a class="navbar-brand" href=""> <img src="../favicon.ico"> {{title}}</a>
   <button
     class="navbar-toggler"
     type="button"
@@ -18,16 +19,16 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <ul class="navbar-nav ms-auto">
       <li class="nav-item">
-        <a class="nav-link btn btn-dark" routerLink="/Product" routerLinkActive="" ariaCurrentWhenActive="page">Products</a>
+        <a class="nav-link btn btn-dark" routerLink="/Product" routerLinkActive="active" ariaCurrentWhenActive="page">Products</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link btn btn-dark" href="#orders">Orders</a>
+        <a class="nav-link btn btn-dark" href="#orders" routerLinkActive="active">Orders</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link btn btn-dark" href="#kart">Kart</a>
+        <a class="nav-link btn btn-dark" routerLink="/Kart" routerLinkActive="active">Kart</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link btn btn-dark" routerLink="/Login">Login/Register</a>
+        <a class="nav-link btn btn-dark" routerLink="/Login" routerLinkActive="active">Login/Register</a>
       </li>
     </ul>
   </div>
@@ -42,12 +43,55 @@
   
 </section>
 
-<section class="lower">
+<!-- <section class="lower">
   
-</section>
+</section> -->
 
-<section class="footer">
-  <h4>@Shipkart,2023</h4>
-  <h6>All rights reserved.</h6>
-</section>
-
+ <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>company</h4>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">affiliate program</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">returns</a></li>
+          <li><a href="#">order status</a></li>
+          <li><a href="#">payment options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>online shop</h4>
+        <ul>
+          <li><a href="#">watch</a></li>
+          <li><a href="#">laptop</a></li>
+          <li><a href="#">buds</a></li>
+          <li><a href="#">iphone</a></li>
+          <li><a href="#">speaker</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+          <a href="https://twitter.com/AkshatG04278403" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="https://www.instagram.com/akshat_garg_07/?hl=en" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="https://www.linkedin.com/in/akshatgarg76" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="color: white;text-align: center;padding: 100px 0px 100px;">
+      <h4>@Shipkart,2023</h4>
+      <h6>All rights reserved.</h6>
+    </div>
+  </div>
+</footer>
