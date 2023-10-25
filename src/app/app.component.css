@@ -10,7 +10,7 @@
 }  
 
 .body{
-    background-color: #C9D6DF;
+    background-color: #C9D6DF; 
     line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
     padding: 3% 3%;
@@ -35,11 +35,29 @@ h1{
 } 
 
 .lower{
-    height: 250px;
     background-color: #52616B;
 }
 
+/* // ----- Features-------// */
 
+#features{
+	
+    padding: 7% 15% ;
+    position: relative;
+    z-index: 1;
+}
+.feature-box{
+	color: white;
+    padding: 4.5%;
+    text-align: center;    
+}
+.icon{
+    color:azure;
+    margin-bottom: 1rem;
+}
+.icon:hover{
+    color: blanchedalmond;
+}
 
 /* // ----- FOOTER-------// */
 
